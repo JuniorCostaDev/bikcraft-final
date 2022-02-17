@@ -1,0 +1,26 @@
+/*padrão de alguns container principais do site */
+.layout--alignment {
+  box-sizing: border-box;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0px 20px;
+}
+
+/* botão */
+.main__text a {
+  background: linear-gradient(#FFBF00, #F2A50C);
+  border-radius: 4px;
+  box-shadow: 0 1px 2px;
+  color: #332200;
+  display: inline-block;
+  font-size: 18px;
+  font-family: 'Poppins';
+  font-weight: 600;
+  line-height: 1.33;
+  padding: 16px 32px;
+  text-transform: uppercase;
+}
+
+.main__text a:hover {
+  background: linear-gradient(#ffb60d, #e59317);
+}

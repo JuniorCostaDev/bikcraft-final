@@ -4,9 +4,45 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description" content="Bicicletas elétricas de alta precisão e qualidade, feitas sob medida para o cliente. Explore o mundo na sua velocidade com a Bikcraft.">
   <title>Bikcraft - Bicicletas Elétricas</title>
+
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
+  <header class="header--bg">
+    <div class="header--container layout--alignment">
+      <a href="./">
+        <img class="header__logo" src="img/bikcraft.svg" alt="logo da marca Bikcraft">
+      </a>
+      <nav class="nav" aria-label="primaria">
+        <ul class="nav__menu">
+          <li><a class="nav__items" href="">Bicicletas</a></li>
+          <li><a class="nav__items" href="">Seguros</a></li>
+          <li><a class="nav__items" href="">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main--bg">
+    <div class="main--template layout--alignment">
+      <div class="main__text">
+        <h1>Bicicletas feitas sob medida<span>.</span></h1>
+        <p>Bicicletas elétricas de alta precisão e qualidade, feitas sob medida para você. Explore o mundo na sua velocidade com a Bikcraft.</p>
+        <a href="#">Escolha a sua</a>
+      </div>
+      <!-- img diretamente no grid é problematico, comportamento diferente em browsers, sempre envolver com uma div ou picture -->
+      <div class="main__image">
+        <img src="img/fotos/introducao.jpg" alt="bicicleta elétrica preta">
+      </div>
+    </div>
+  </main>
   
 </body>
 </html>
