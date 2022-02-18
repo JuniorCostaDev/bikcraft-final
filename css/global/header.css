@@ -20,8 +20,6 @@
 
 .nav__items {
   display: inline-block;
-  font-size: 18px;
-  font-family:'Poppins';
   padding: 16px 0;
   position: relative;
 }
