@@ -1,8 +1,10 @@
+/* Utilitários */
+@import url(./utilities/colors.css);
+@import url(./utilities/components.css);
+
+/* global */
 @import url(./global/global.css);
 @import url(./global/header.css);
-
-/* Utilitários */
-@import url(./utilities/components.css);
 
 /* Página index */
 @import url(./home/main.css);

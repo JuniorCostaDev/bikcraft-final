@@ -7,20 +7,26 @@
 }
 
 /* botão */
-.main__text a {
+.button {
   background: linear-gradient(#FFBF00, #F2A50C);
   border-radius: 4px;
   box-shadow: 0 1px 2px;
-  color: #332200;
+  color: var(--color-p5);
   display: inline-block;
   font-size: 18px;
   font-family: 'Poppins';
-  font-weight: 600;
   line-height: 1.33;
   padding: 16px 32px;
   text-transform: uppercase;
 }
 
-.main__text a:hover {
+.button:hover {
   background: linear-gradient(#ffb60d, #e59317);
+}
+
+@media (max-width:600px) {
+  .button {
+    padding: 12px 16px;
+    font-size: 16px;
+  }
 }
