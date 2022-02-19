@@ -17,9 +17,29 @@
   padding: 16px 32px;
   text-transform: uppercase;
 }
-
 .button:hover {
   background: linear-gradient(#ffb60d, #e59317);
+}
+
+/* botão link que fica no container technology */
+.content__link {
+  display: inline-block;
+  color: var(--color-p1);
+  font: 500 2.4rem/1.5 'Poppins', sans-serif;
+  text-transform: uppercase;
+}
+
+.content__link::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 4px;
+  /* vai pegar o valor do elemento pai */
+  background-color: currentColor;
+}
+
+.content__link:hover {
+  color: var(--color-0);
 }
 
 @media (max-width:600px) {

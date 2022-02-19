@@ -9,6 +9,10 @@
 
 /* Página index */
 @import url(./home/main.css);
+@import url(./home/technology.css);
+
+/* lista de bicicletas a venda */
+@import url(./bikes/bikes-list.css);
 
 
 

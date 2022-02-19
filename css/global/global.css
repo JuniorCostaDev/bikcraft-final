@@ -26,4 +26,8 @@ img {
   display: block;
   max-width: 100%;
 }
+/*estou selecionando todas as imagens .jpg */
+img[src$=".jpg"] {
+  border-radius: 4px;
+}
 
