@@ -1,0 +1,51 @@
+.partners {
+  padding: 60px 0 120px 0;
+}
+.partners h2 {
+  margin-bottom: 60px;
+}
+.partners ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 0 auto;
+  max-width: 1400px;
+  padding: 0 20px;
+}
+.partners ul li {
+  padding: 32px;
+  display: flex;
+}
+/* borda interna para a lista de marcas */
+.partners ul li:nth-child(n+1):nth-child(-n+3),
+.partners ul li:nth-child(n+5):nth-child(-n+7) {
+  border-right: 2px solid var(--color-2);
+}
+.partners ul li:nth-child(n + 5) {
+  border-top: 2px solid var(--color-2);
+}
+.partners img {
+  margin: auto;
+}
+
+@media (max-width: 800px) {
+  .partners {
+    padding-bottom: 60px;
+  }
+  .partners h2 {
+    margin-bottom: 20px;
+  }
+  .partners ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  /* ajuste das bordas para 2 colunas */
+  .partners ul li:nth-child(n+1):nth-child(-n+3), 
+  .partners ul li:nth-child(n+5):nth-child(-n+7) {
+    border-right: none;
+  }
+  .partners ul li:nth-child(even) {
+    border-left: 2px solid var(--color-2);
+  }
+  .partners ul li:nth-child(n+3) {
+    border-top: 2px solid var(--color-2);
+  }
+}

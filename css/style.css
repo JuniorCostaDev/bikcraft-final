@@ -10,6 +10,7 @@
 /* Página index */
 @import url(./home/main.css);
 @import url(./home/technology.css);
+@import url(home/partners.css);
 
 /* lista de bicicletas a venda */
 @import url(./bikes/bikes-list.css);
