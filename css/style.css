@@ -1,19 +1,20 @@
-/* Utilitários */
-@import url(./utilities/colors.css);
-@import url(./utilities/typography.css);
-@import url(./utilities/components.css);
+/* Utilitários e componentes */
+@import url(utilities/colors.css);
+@import url(utilities/typography.css);
+@import url(utilities/components.css);
 
 /* global */
-@import url(./global/global.css);
-@import url(./global/header.css);
+@import url(global/global.css);
+@import url(global/header.css);
 
 /* Página index */
-@import url(./home/main.css);
-@import url(./home/technology.css);
+@import url(home/main.css);
+@import url(home/technology.css);
 @import url(home/partners.css);
+@import url(home/statement.css);
 
 /* lista de bicicletas a venda */
-@import url(./bikes/bikes-list.css);
+@import url(bikes/bikes-list.css);
 
 
 

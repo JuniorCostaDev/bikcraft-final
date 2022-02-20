@@ -37,6 +37,9 @@
   .partners ul {
     grid-template-columns: repeat(2, 1fr);
   }
+  .partners li {
+    padding: 20px;
+  }
   /* ajuste das bordas para 2 colunas */
   .partners ul li:nth-child(n+1):nth-child(-n+3), 
   .partners ul li:nth-child(n+5):nth-child(-n+7) {
