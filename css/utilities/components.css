@@ -14,11 +14,22 @@
   color: var(--color-p5);
   display: inline-block;
   font: 600 1.8rem/1.35 "Poppins", sans-serif;
+  /* valor max-content ele vai ter o tamanho máximo do conteúdo */
+  max-width: max-content;
   padding: 16px 32px;
   text-transform: uppercase;
 }
 .button:hover {
   background: linear-gradient(#ffb60d, #e59317);
+}
+/* botão preto secundario */
+.button.second {
+  background: var(--color-10);
+  color: var(--color-2);
+}
+
+.button.second:hover {
+  background: var(--color-9);
 }
 
 /* botão link que fica no container technology */
