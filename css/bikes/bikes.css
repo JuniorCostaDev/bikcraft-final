@@ -1,0 +1,91 @@
+.bikes--bg {
+  background: linear-gradient(to right, var(--color-0) 30%, var(--color-11) 0%);
+}
+.bikes {
+  display: grid;
+  gap: 40px;
+  grid-template-columns: 1fr 1fr;
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+/* abaixo vamos ver uma solução diferente de usar position para posicionar o span dentro da imagem */
+.bikes__img {
+  display: grid;
+}
+.bikes__img img{
+  grid-area: 1/1;
+}
+.bikes__img span {
+  background-color: var(--color-12);
+  border-radius: 4px 0 0 4px;
+  display: inline-block;
+  grid-area: 1/1;
+  margin-top: 20px;
+  padding: 8px 16px 8px 8px;
+  /* atalho para align e justify */
+  place-self: start end;
+}
+.bikes__content {
+  align-content: start;
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+.bikes__content h2,
+.bikes__content p {
+  grid-column: 1/-1;
+}
+.bikes__content h2 {
+  margin-bottom: 20px;
+}
+.bikes__content h2::before {
+  background-color: var(--color-p1);
+  content: "";
+  display: block;
+  height: 8px;
+  margin-bottom: 8px;
+  width: 12px;
+}
+.bikes__content p {
+  margin-bottom: 32px;
+}
+.bikes__content a {
+  place-self: end;
+}
+.bikes__content li {
+  align-items: center;
+  display: flex;
+}
+.bikes__content ul {
+  display: grid;
+  gap: 16px;
+}
+.bikes__content img {
+  margin-right: 8px;
+  width: 24px;
+}
+
+@media (max-width: 800px) {
+  .bikes--bg {
+    background: var(--color-11);
+  }
+  .bikes {
+    gap: 20px;
+    grid-template-columns: 1fr;
+    padding-bottom: 40px;
+    padding-top: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .bikes__content {
+    grid-template-columns: 1fr;
+  }
+  .bikes__content ul {
+    font-size: 1.6rem;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 32px;
+  }
+  .bikes a {
+    place-self: start;
+  }
+}

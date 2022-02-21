@@ -16,6 +16,7 @@
 
 /* lista de bicicletas a venda */
 @import url(bikes/bikes-list.css);
+@import url(bikes/bikes.css);
 
 /* seguros de biciletas */
 @import url(insurance/insurances.css);
