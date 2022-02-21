@@ -31,9 +31,9 @@
   margin-bottom: 32px;
 }
 .insurance__card li {
-  position: relative;
-  display: flex;
   align-items: center;
+  display: flex;
+  position: relative;
 }
 /* propriedade só vai valer nos <li> que tiver um <li> antes(acima). */
 .insurance__card li + li {

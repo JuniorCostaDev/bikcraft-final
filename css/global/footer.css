@@ -3,8 +3,8 @@
 }
 .footer {
   display: grid;
-  grid-template-columns: 3fr 5fr 4fr;
   gap: 40px;
+  grid-template-columns: 3fr 5fr 4fr;
   padding: 60px 20px;
 }
 .footer h3 {
@@ -20,12 +20,12 @@
   color: var(--color-0);
 }
 .footer__contact li:nth-child(even)::after {
+  background: var(--color-11);
   content: "";
   display: block;
-  max-width: 360px;
   height: 2px;
-  background: var(--color-11);
   margin-top: 16px;
+  max-width: 360px;
 }
 .footer__social {
   display: flex;
