@@ -20,5 +20,8 @@
 /* seguros de biciletas */
 @import url(insurance/insurances.css);
 
+/* termos e condições */
+@import url(terms/terms.css);
+
 
 
