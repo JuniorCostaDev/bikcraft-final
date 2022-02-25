@@ -18,6 +18,9 @@
 @import url(bikes/bikes-list.css);
 @import url(bikes/bikes.css);
 
+/* site interno bicleta nimbus */
+@import url(bike/bike.css);
+@import url(bike/insurance-bike.css);
 /* seguros de biciletas */
 @import url(insurance/insurance.css);
 @import url(insurance/advantage.css);

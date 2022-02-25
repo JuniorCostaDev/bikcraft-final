@@ -14,7 +14,9 @@
   overflow-x: auto;
   padding: 0 20px 20px 20px;
 }
-
+#bike__nimbus .bikescard__list {
+  padding: 0px 0px 20px 0px;
+}
 .bikescard__list li {
   min-width: 280px;
 }
