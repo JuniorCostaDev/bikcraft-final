@@ -19,7 +19,9 @@
 @import url(bikes/bikes.css);
 
 /* seguros de biciletas */
-@import url(insurance/insurances.css);
+@import url(insurance/insurance.css);
+@import url(insurance/advantage.css);
+@import url(insurance/question.css);
 
 /* termos e condições */
 @import url(terms/terms.css);
