@@ -1,14 +1,15 @@
-/* Utilitários e componentes */
+/* Css utilitário e componentes */
 @import url(utilities/colors.css);
 @import url(utilities/typography.css);
 @import url(utilities/components.css);
+@import url(/css/utilities/form.css);
 
-/* global */
+/* Estilos globais */
 @import url(global/global.css);
 @import url(global/header.css);
 @import url(global/footer.css);
 
-/* Página index */
+/*Página index */
 @import url(home/main.css);
 @import url(home/technology.css);
 @import url(home/partners.css);
@@ -21,10 +22,15 @@
 /* site interno bicleta nimbus */
 @import url(bike/bike.css);
 @import url(bike/insurance-bike.css);
+
 /* seguros de biciletas */
 @import url(insurance/insurance.css);
 @import url(insurance/advantage.css);
 @import url(insurance/question.css);
+
+/* Pagina de contato e store */
+@import url(/css/contact/contact.css);
+@import url(/css/contact/store.css);
 
 /* termos e condições */
 @import url(terms/terms.css);

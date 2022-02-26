@@ -18,6 +18,8 @@
   max-width: max-content;
   padding: 16px 32px;
   text-transform: uppercase;
+  border: none;
+  cursor: pointer;
 }
 .button:hover {
   background: linear-gradient(#ffb60d, #e59317);
