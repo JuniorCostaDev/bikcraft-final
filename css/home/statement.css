@@ -11,6 +11,7 @@
   width: 100%;
 }
 .statement__content {
+  background: url(../../img/dec/bottom-right-p.svg) no-repeat bottom 40px right 40px;
   align-self: end;
   padding: 40px 40px 80px 80px;
 }
@@ -22,22 +23,25 @@
   margin-bottom: 32px;
   position: relative;
 }
-
 .statement__content p::before,
 .statement__content p::after {
   font-size: 8rem;
   color: var(--color-p2);
   position: absolute;
 }
-
 .statement__content p::before {
   content: "“";
   left: -50px;
   top: -20px;
 }
-
 .statement__content p::after {
   content: "”";
+}
+
+@media (min-width: 1200px) {
+  .statement img {
+    max-height: 520px;
+  }
 }
 
 @media (max-width: 800px) {

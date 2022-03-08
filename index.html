@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,17 +9,19 @@
   <meta name="description" content="Bicicletas elétricas de alta precisão e qualidade, feitas sob medida para o cliente. Explore o mundo na sua velocidade com a Bikcraft.">
   <title>Bikcraft | Bicicletas Elétricas</title>
 
-
+  <link rel="preload" href="/css/style.css" as="style">
   <link rel="stylesheet" href="css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 </head>
+
 <body>
   <header class="header--bg">
     <div class="header--container layout--alignment">
-      <a href="./">
-        <img class="header__logo" src="img/bikcraft.svg" alt="logo da marca Bikcraft">
+      <a href="/index.html">
+        <!-- essa é a maneira certa de se adicionar uma imagem -->
+        <img class="header__logo" width="136" height="32" src="img/bikcraft.svg" alt="logo da marca Bikcraft">
       </a>
       <nav class="nav" aria-label="primaria">
         <ul class="nav__menu font-1-m color-0">
@@ -38,9 +41,12 @@
         <a class="button" href="bikes.html">Escolha a sua</a>
       </div>
       <!-- img diretamente no grid é problematico, comportamento diferente em browsers, sempre envolver com uma div ou picture -->
-      <div class="main__image">
-        <img src="img/fotos/introducao.jpg" alt="bicicleta elétrica preta">
-      </div>
+      <picture class="main__image">
+        <!-- vai ser carregada essa quando a largura dá pagina for menor que 800px -->
+        <source media="(max-width: 800px)" srcset="/img/bicicletas/nimbus.jpg">
+        <!-- essa vai ser carregaga quando for maior ou igual a 800px -->
+        <img src="img/fotos/introducao.jpg" width="1280" height="1600" alt="bicicleta elétrica preta">
+      </picture>
     </div>
   </main>
 
@@ -196,6 +202,7 @@
       <p class="footer__copy font-2-m color-6">Bikcraft © Alguns direitos reservados.</p>
     </div>
   </footer>
-  
+
 </body>
+
 </html>
