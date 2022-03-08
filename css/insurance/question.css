@@ -12,30 +12,41 @@
 .questions dl > div:nth-child(odd) {
   background-color: var(--color-1);
 }
-.questions dt {
-  display: grid;
-  grid-template-columns: auto 1fr auto;
+.questions button {
   align-items: center;
-  gap: 8px;
+  background: none;
+  border: none;
   cursor: pointer;
+  display: grid;
+  gap: 8px;
+  grid-template-columns: auto 1fr auto;
+  text-align: left;
+  width: 100%;
 }
-.questions dt::before {
-  content: "";
-  display: inline-block;
-  width: 12px;
-  height: 8px;
+.questions button::before {
   background-color: var(--color-p1);
-}
-.questions dt::after {
   content: "";
   display: inline-block;
-  width: 14px;
-  height: 6px;
-  background: url(../../img/icones/seta-abrir.svg);
-  transition: 0.3s;
+  height: 8px;
+  width: 12px;
 }
-.questions dt:hover::after {
+.questions button::after {
+  background: url(../../img/icones/seta-abrir.svg);
+  content: "";
+  display: inline-block;
+  height: 6px;
+  transition: 0.3s;
+  width: 14px;
+}
+.questions button:hover::after,
+.questions button[aria-expanded="true"]::after {
   transform: rotate(180deg);
+}
+.questions dd {
+  display: none;
+}
+.questions dd.ativa {
+  display: block;
 }
 .questions dd {
   padding-left: 20px;

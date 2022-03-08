@@ -35,7 +35,8 @@
   width: 0px;
 }
 
-.nav__items:hover::after {
+.nav__items:hover::after,
+.nav__items.ativo::after {
   width: 100%;
 }
 
